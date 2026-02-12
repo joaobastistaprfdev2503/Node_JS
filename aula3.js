@@ -34,6 +34,3 @@ const conteudo = fs.readFileSync("produtos.json", "utf-8")
 const produto = JSON.parse(conteudo)
 
 console.log(produto[0])
-
-
-
