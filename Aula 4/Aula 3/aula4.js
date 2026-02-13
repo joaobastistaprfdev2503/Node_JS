@@ -5,6 +5,7 @@ async function lerUsuarios() {
     const dados = await fs.readFile("usuarios.json", "utf-8");
     const listaUsuarios = JSON.parse(dados);
     return listaUsuarios;
+
   } catch (erro) {
     console.log("Erro na leitura:", erro.message);
     return [];
